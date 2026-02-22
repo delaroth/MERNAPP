@@ -1,3 +1,4 @@
+/* eslint-disable */
 import mongoose from 'mongoose'
 
 const postSchema = mongoose.Schema({
@@ -9,14 +10,12 @@ const postSchema = mongoose.Schema({
     likeCount: {
         type: Number,
         default: 0
-
     },
     createdAt: {
         type: Date,
         default: new Date()
     },
 })
-
 
 const PostMessage = mongoose.model('PostMessage', postSchema)
 
